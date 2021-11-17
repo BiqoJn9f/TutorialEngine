@@ -94,6 +94,8 @@ typedef struct {
 // GLOBALS
 extern int Sq120ToSq64[BRD_SQ_NUM];
 extern int Sq64ToSq120[64];
+extern U64 SetMask[64];
+extern U64 ClearMask[64];
 
 // FUNCTIONS
 
