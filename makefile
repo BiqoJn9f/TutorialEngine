@@ -1,1 +1,3 @@
-gcc vice.c -o vice
+all:
+	gcc vice.c -o vice
+	
