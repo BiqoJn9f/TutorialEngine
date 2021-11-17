@@ -5,6 +5,13 @@
 int Sq120ToSq64[BRD_SQ_NUM];
 int Sq64ToSq120[64];
 
+U64 SetMask[64];
+U64 ClearMask[64];
+
+void InitBitMasks() {
+    int index = 0;
+}
+
 void InitSq120To64() {
     int index = 0;
     int file = FILE_A;
