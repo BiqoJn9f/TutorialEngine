@@ -41,6 +41,8 @@ typedef struct {
     int ply;
     int hisPly;
 
+    int castlePerm;
+
     U64 posKey;
 
     int pceNum[13];
