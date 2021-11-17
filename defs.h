@@ -74,7 +74,7 @@ extern int Sq120ToSq64[BRD_SQ_NUM];
 extern int Sq64ToSq120[64];
 
 // FUNCTIONS
-
+extern void AllInit();
 
 // init.c
 
