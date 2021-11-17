@@ -31,6 +31,16 @@ enum { WKCA = 1, WQCA = 2, BKCA = 4, BQCA = 8 };
 
 typedef struct {
 
+    int move;
+    int castlePerm;
+    int enPas;
+    int fiftyMove;
+    U64 posKey;
+
+} S_UNDO;
+
+typedef struct {
+
     int pieces[BRD_SQ_NUM];
     U64 pawns[3];
 
