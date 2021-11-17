@@ -8,6 +8,13 @@ const int BitTable[64] = {
     58, 20, 37, 17, 36, 8
 };
 
+int PopBit(U64 *bb) {
+    U64 b = *bb ^ (*bb - 1);
+    unsigned int fold = (unsigned) ((b & 0xffffffff) ^ (b >> 32));
+    *bb &= (*bb - 1);
+    return BitTable[(fold * 0x783a9b23) >> 26];
+}
+
 void PrintBitBoard(U64 bb) {
 
     U64 shiftMe = 1ULL;
