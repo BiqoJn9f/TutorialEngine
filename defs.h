@@ -66,4 +66,16 @@ typedef struct {
 
 } S_BOARD;
 
+// MACROS
+
+
+// GLOBALS
+extern int Sq120ToSq64[BRD_SQ_NUM];
+extern int Sq64ToSq120[64];
+
+// FUNCTIONS
+
+
+// init.c
+
 #endif
